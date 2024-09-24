@@ -680,18 +680,34 @@
                                 <!-- Reply Messages End-->
 
                                 <!-- Notify Form Start -->
-                                <form class="form form-light notify-form" id="notify-form">
-                                    <div class="container-fluid px-4">
-                                        <div class="row gx-5">
-                                            <div class="col-12">
-                                                <input class="transition-el transition-el-3" type="email" placeholder="Email Adress*" required>
-                                                <button class="button button-solid-light transition-el transition-el-4" type="submit">
-                            <span class="button-caption">Send</span>
-                          </button>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="form form-light stayintouch-form" id="stayintouch-form">
+                                        <!-- Hidden Required Fields -->
+                                        <input type="hidden" name="access_key" value="ce69b7d9-2853-4ed5-841c-c496c092a952">
+
+                                        <input type="hidden" name="project_name" value="BrandoBytes Comingsoon">
+                                        <input type="hidden" name="admin_email" value="brandobytes@gmail.com">
+                                        <input type="hidden" name="form_subject" value="Stay-in-touch Form Message">
+                                        <!-- END Hidden Required Fields-->
+                                        <div class="container-fluid px-4">
+                                            <div class="row gx-5">
+                                                <div class="col-12">
+                                                    <input class="transition-el transition-el-2" type="text" name="Name" placeholder="Your Name*" required>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input class="transition-el transition-el-3" type="email" name="E-mail" placeholder="Email Adress*" required>
+                                                </div>
+                                                <div class="col-12">
+                                                    <textarea class="transition-el transition-el-4" name="Message" placeholder="Your Message*" required></textarea>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span class="inputs-description opacity-el opacity-el-1">*Required fields</span>
+                                                    <button type="submit" class="button button-solid-light transition-el transition-el-5">
+                              <span class="button-caption">Submit</span>
+                            </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
                                 <!-- Notify Form End -->
 
                             </div>
